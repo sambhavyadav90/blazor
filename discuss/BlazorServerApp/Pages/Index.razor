@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<br />
+<br />
+<h4> If comment &lt;script src="_framework/blazor.server.js"&gt; &lt;/script&gt;  in _Layout.cshtml page than menu drill down working poperly. Why blazor.server.js inturpting other js</h4>
+<br />
+<h4>After commenting &lt;script src="_framework/blazor.server.js"&gt; &lt;/script&gt; blazor button or anything related to blazor control stopped working...</h4>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+
